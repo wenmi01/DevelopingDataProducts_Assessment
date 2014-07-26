@@ -1,7 +1,7 @@
 DevelopingDataProducts_Assessment
 =================================
 ## Mortgage Computation App
-###About
+### About
 The app is written in R using the Shiny package.
 
 This computes the Mortgage in Monthly payment amount.
@@ -12,10 +12,13 @@ You need to provide your Principal Amount (loan amount), interest in percentage 
 
 This app will reactively/automatically compute after clicking the first time.
 
+### Presentation
+See the presentation directory of this repository.
+
 ### Written in 2014
 Rowen Remis R. Iral
 
-Data Scientist with MBA
+Data Scientist with MBA skills
 IT Engineer
 Solutions Architect
 Marketing Master/Internet Marketer

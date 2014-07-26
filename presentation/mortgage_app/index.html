@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<title>Mortgage App</title>
+	<meta name="description" content="Mortgage App">
+	<meta name="author" content="Rowen Remis R. Iral">
+	<meta name="generator" content="slidify" />
+	
+	<!-- LOAD STYLE SHEETS -->
+	<link rel="stylesheet" href="/libraries/frameworks/html5slides/default/styles.css">
+	<link rel="stylesheet" href="/libraries/highlighters/highlight.js/css/tomorrow.css" />    
+</head>
+<body style='display: none'>
+	<section class='slides layout-regular template-regular'>
+     <article class="" id="slide-1" style="background:;">
+  <h3>Mortgage App</h3>
+  <h3>An App to Calculate your Monthly Payment Requirement</h3>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Monthly Payment Formula</h3>
+  <h3>This is the formula</h3>
+
+<p>From: <a href="http://www.wikihow.com/Calculate-Mortgage-Payments">http://www.wikihow.com/Calculate-Mortgage-Payments</a></p>
+
+<p>\[M = P * \frac{i * (1 + i)^n}{(1+i)^n-1}\]</p>
+
+<p>This computes M the monthly payment amount.</p>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Details</h3>
+  <ul>
+<li>M = monthly payment</li>
+<li>P = principal amount</li>
+<li>i = interest rate (percentage)</li>
+<li><p>n = number of payments</p></li>
+<li><p>Monthly payment (M)</p></li>
+<li><p>Principal amount (P)</p></li>
+</ul>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>R Code Snippets</h3>
+  <pre><code class="r">P &lt;- 100 ## amount
+i &lt;- 10 ## interest rate %
+i &lt;- i/100 ## Get the percentage of i
+n &lt;- 12 ## months to pay
+
+M &lt;- P * ((i * (1 + i) ^n)/(((1+i)^n)-1))
+out &lt;- round(M,2)
+print(paste(&quot;Monthly payment:&quot;,out))
+</code></pre>
+
+<pre><code>## [1] &quot;Monthly payment: 14.68&quot;
+</code></pre>
+
+</article>
+
+<article class="class" id="id" style="background:;">
+  <h3>Thank you.</h3>
+  <h3>Github address</h3>
+
+<p><a href="https://github.com/wenmi01/DevelopingDataProducts_Assessment">https://github.com/wenmi01/DevelopingDataProducts_Assessment</a></p>
+
+<p>Mortgage App (2014)</p>
+
+</article>
+
+  </section>
+</body>
+  <!-- LOAD JAVASCRIPTS  -->
+	<script src='/libraries/frameworks/html5slides/default/slides.js'></script>
+	<!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+	<script type="text/x-mathjax-config">
+	  MathJax.Hub.Config({
+	    tex2jax: {
+	      inlineMath: [['$','$'], ['\\(','\\)']],
+	      processEscapes: true
+	    }
+	  });
+	</script>
+	<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+	<!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script> -->
+	<script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="/libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+	<script src="/libraries/highlighters/highlight.js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<!-- DONE LOADING HIGHLIGHTER JS FILES -->
+	 
+	</html>
